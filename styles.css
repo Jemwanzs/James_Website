@@ -1,0 +1,250 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: #333;
+    font-size: 18px;
+    /* Increase base font size */
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #00bcd4);
+    color: #fff;
+    padding: 20px 0;
+    /* Increase padding for larger header */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    /* Increase header font size */
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+    /* Increase margin between menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    /* Increase padding for larger buttons */
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    /* Increase font size for menu items */
+}
+
+nav ul li a:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    /* Increase padding for larger hero section */
+    text-align: center;
+    animation: slideIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 4em;
+    /* Increase font size for hero heading */
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 2em;
+    /* Increase font size for hero paragraph */
+    margin-top: 10px;
+}
+
+.main {
+    padding: 30px;
+    /* Increase padding for larger main content area */
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.intro,
+.about,
+.services,
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    /* Increase margin around sections */
+}
+
+.intro img,
+.about img,
+.services img,
+.portfolio img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+.intro img:hover,
+.about img:hover,
+.services img:hover,
+.portfolio img:hover {
+    transform: scale(1.05);
+}
+
+.intro .btn,
+.services .btn,
+.portfolio .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    /* Increase padding for larger buttons */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* Increase margin for button */
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    /* Increase font size for buttons */
+}
+
+.intro .btn:hover,
+.services .btn:hover,
+.portfolio .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    /* Increase padding for footer */
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    /* Increase max-width for larger forms */
+    margin: 0 auto;
+    padding: 30px;
+    /* Increase padding for larger forms */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-top: 15px;
+    /* Increase margin for labels */
+    font-weight: bold;
+    font-size: 1.2em;
+    /* Increase font size for labels */
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    /* Increase padding for form fields */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: 1em;
+    /* Increase font size for input fields */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form button {
+    padding: 15px 30px;
+    /* Increase padding for buttons */
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.2em;
+    /* Increase font size for buttons */
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Add Images: We'll add a few images to make the site more visually appealing. You can use free images from websites like Unsplash or Pexels.
+
+Update the CSS: We'll enhance the CSS to give the site a modern look and feel.
+
+Enhance the Layout: We'll update the HTML structure to improve the layout and add some new sections.
+
+First,
+download some images and place them in a folder named images inside your project directory. Let's assume you have the following images:
+
+profile.jpg (for the About Me section) services.jpg (for the Services section) portfolio.jpg (for the Portfolio section)
+*/
